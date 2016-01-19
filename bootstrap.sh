@@ -77,7 +77,7 @@ function pullUpdates() {
     git pull
     # rsync --exclude ".git/" --exclude ".DS_Store" \
     #     --exclude "README.md" --exclude "LICENSE" -avh --no-perms . ~;
-    # source .bash_profile;
+    source .bash_profile;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
@@ -97,6 +97,7 @@ else
                 pullUpdates;
             else
                 initialPull;
+                pullUpdates;
             fi;
         fi;
     fi;
