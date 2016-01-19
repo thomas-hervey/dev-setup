@@ -22,6 +22,8 @@ function setupGithubSSH() {
     echo ""
     echo "insalling git"
     git clone https://github.com/git/git
+    echo "set git globals"
+    
     echo "--> Lists the files in your .ssh directory, if they exist"
     ls -al ~/.ssh
     echo "--> Creates a new ssh key, using the provided email as a label"
