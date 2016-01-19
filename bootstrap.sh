@@ -53,7 +53,7 @@ function initialPull() {
         
         # make .dotfiles folder
         echo "--> Making .dotfiles folder"
-        mkdir ~/.dotfiles/dev-setup && cd ~/.dotfiles/dev-setup
+        mkdir Projects/dotfiles/dev-setup && cd Projects/dotfiles/dev-setup
         
         # intialize git repository
         echo "--> git init & git remote add origin git@github.com:tomtom92/dev-setup.git"
@@ -86,7 +86,7 @@ else
     echo "";
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         # check to see if .dotfiles install directory exists. If so, ask if installing new content
-        if [ -d ~/.dotfiles/dev-setup ]; then
+        if [ -d Projects/dotfiles/dev-setup ]; then
             pullUpdates;
         else
             read -p "The ~/.dotfiles/dev-setup folder is empty. Is this the first time installing from this repo? (y) " -n 1;
