@@ -126,11 +126,16 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable smart dashes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
+# Set login wallpaper
+mv com.apple.desktop.admin.png /Library/Caches/com.apple.desktop.admin.png
+echo "--> Go to /Library/Caches/ and set the login file's Get Info 'Everyone : Ready Only' "
+
 # Set a custom wallpaper image. `DefaultDesktop.jpg` is already a symlink, and
 # all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
 #rm -rf ~/Library/Application Support/Dock/desktoppicture.db
 #sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
-#sudo ln -s /path/to/your/image /System/Library/CoreServices/DefaultDesktop.jpg
+#sudo ln -s desktop_wallpaper.png /System/Library/CoreServices/DefaultDesktop.jpg
+
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
