@@ -5,6 +5,10 @@ dev-setup
   <img src="https://raw.githubusercontent.com/donnemartin/dev-setup-resources/master/res/repo-header.gif">
 </p>
 
+## MODIFICATION
+
+This code has been forked from Donne Martin's dev-setup. Please see his work before looing into this repository. I have made subjective alterations for my needs.
+
 ## Motivation
 
 Setting up a new developer machine can be an **ad-hoc, manual, and time-consuming** process.  `dev-setup` aims to **simplify** the process with **easy-to-understand instructions** and **dotfiles/scripts** to **automate the setup** of the following:
