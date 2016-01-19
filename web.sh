@@ -14,18 +14,21 @@ if test ! $(which brew); then
   echo "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
-
 # Make sure we’re using the latest Homebrew.
 brew update
+# Upgrade any already-installed formulae.
+brew upgrade --all
 
 brew install node
 
-# Remove outdated versions from the cellar.
+# Clean up & remove outdated versions from the cellar.
 brew cleanup
+brew prune
+brew doctor
 
 npm install -g coffee-script
 npm install -g grunt-cli
 npm install -g jshint
-npm install -g less
+npm install -g sass
 
 #gem install jekyll

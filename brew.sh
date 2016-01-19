@@ -14,26 +14,25 @@ if test ! $(which brew); then
   echo "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
-
-# Make sure we’re using the latest Homebrew.
-brew update
-
-# Upgrade any already-installed formulae.
-brew upgrade --all
+brew update # Make sure we’re using the latest Homebrew
+brew upgrade --all # Upgrade any already-installed formulae
+##
+# Link kegs before any installs
+ls -1 /usr/local/Library/LinkedKegs | while read line; do
+    brew link --force $line
+done
+##
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
-# Install some other useful utilities like `sponge`.
-brew install moreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
-brew install findutils
-# Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
-# Install Bash 4.
-brew install bash
+brew install moreutils # useful utilities like `sponge`
+brew install findutils # GNU `find`,`locate`,`updatedb`,and `xargs`,`g`-prefixed
+brew install gettext # GNU gettext
+brew install gnu-sed --with-default-names # GNU `sed`, overwrite built-in `sed`
+brew install bash # Bash 4
 brew tap homebrew/versions
 brew install bash-completion2
 # We installed the new shell, now we have to activate it
@@ -44,21 +43,19 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 chsh -s /usr/local/bin/bash
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget --with-iri # GNU package retrieval
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
+# Install RingoJS and Narwhal (order important)
+brew install ringojs # multi-threaded JS on JVM
+brew install narwhal # JS platform
 
 # Install Python
-brew install python
-brew install python3
+brew install python # language
+brew install python3 # language
 
 # Install ruby-build and rbenv
-brew install ruby-build
-brew install rbenv
+brew install ruby-build # compile/install ruby language
+brew install rbenv #ruby version management
 LINE='eval "$(rbenv init -)"'
 grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
@@ -79,7 +76,7 @@ brew install woff2
 brew install aircrack-ng
 brew install bfg
 brew install binutils
-brew install binwalk
+##brew install binwalk  'got stuck on install last time it was run'
 brew install cifer
 brew install dex2jar
 brew install dns2tcp
@@ -104,6 +101,8 @@ brew install xz
 # Install other useful binaries.
 brew install ack
 brew install dark-mode
+brew install unar
+brew install pkg-config
 #brew install exiv2
 brew install git
 brew install git-lfs
@@ -135,45 +134,66 @@ brew link libxslt --force
 brew install heroku-toolbelt
 heroku update
 
-# Install Cask
-brew install caskroom/cask/brew-cask
+brew install caskroom/cask/brew-cask # Install Cask
 
 # Core casks
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" xquartz
+brew cask install --appdir="~/Applications" iterm2 # terminal alternative
+brew cask install --appdir="~/Applications" java # language
+brew cask install --appdir="~/Applications" xquartz # Apple's X server
 
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text3
-brew cask install --appdir="/Applications" atom
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" heroku-toolbelt
-brew cask install --appdir="/Applications" macdown
+brew cask install --appdir="/Applications" atom # hackable code text editor
+brew cask install --appdir="/Applications" dash # api documentation
+brew cask install --appdir="/Applications" github-desktop # code repository
+brew cask install --appdir="/Applications" heroku-toolbelt # heroku command line
+brew cask install --appdir="/Applications" lightpaper # mac markup editor
+brew cask install --appdir="/Applications" mactex # mac TeX distribution
+brew cask install --appdir="/Applications" processing # visual coding sandbox
+brew cask install --appdir="/Applications" pycharm # python IDE
+brew cask install --appdir="/Applications" rstudio # R IDE
+brew cask install --appdir="/Applications" sublime-text3 # code text editor
+brew cask install --appdir="/Applications" textwrangler # basic text editor
+brew cask install --appdir="/Applications" vagrant # virtual environments
+brew cask install --appdir="/Applications" vagrant-manager
+brew cask install --appdir="/Applications" virtualbox # virtual machines
 
-# Misc casks
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" evernote
-#brew cask install --appdir="/Applications" gimp
-#brew cask install --appdir="/Applications" inkscape
+# Google casks
+brew cask install --appdir="/Applications" google-chrome # browser
+brew cask install --appdir="/Applications" google-drive # cloud storage
+brew cask install --appdir="/Applications" google-earth # earth
+brew cask install --appdir="/Applications" google-photos-backup # photos
+brew cask install --appdir="/Applications" google-refine # messy data helper
 
-#Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
+# Storage casks
+brew cask install --appdir="/Applications" box-sync # cloud storage
+brew cask install --appdir="/Applications" dropbox # cloud storage
 
-# Link cask apps to Alfred
-brew cask alfred link
+# Productivity casks
+##brew cask install --appdir="/Applications" evernote
+brew cask install --appdir="/Applications" mendeley-desktop # reference manager
+brew cask install --appdir="/Applications" microsoft-office # office suite
+##brew cask install --appdir="/Applications" slack
+
+# Security, organization, utility casks
+brew cask install --appdir="/Applications" appcleaner # application cleaner
+brew cask install --appdir="/Applications" avira-antivirus # mac antivirus
+brew cask install --appdir="/Applications" caffeine # keep system awake
+brew cask install --appdir="/Applications" flux # screen ergonomics
+brew cask install --appdir="/Applications" onyx # cleaning utility
+brew cask install --appdir="/Applications" silverlight # microsoft's flash
+brew cask install --appdir="/Applications" the-unarchiver # archive utility
+
+# Misc. casks
+brew cask install --appdir="/Applications" firefox # when chrome sucks
+brew cask install --appdir="/Applications" gdal-framework # open GIS framework
+brew cask install --appdir="/Applications" qgis # open source GIS
+brew cask install --appdir="/Applications" skype # where the chatting happens
+brew cask install --appdir="/Applications" spotify # where the magic happens
+brew cask install --appdir="/Applications" steam # where the fun happens
 
 # Install Docker, which requires virtualbox
-brew install docker
-brew install boot2docker
+brew install docker # application packaging
+brew install boot2docker # mac docker assistant
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
-
-# Remove outdated versions from the cellar.
-brew cleanup

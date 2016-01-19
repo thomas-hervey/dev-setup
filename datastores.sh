@@ -14,9 +14,10 @@ if test ! $(which brew); then
   echo "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
-
 # Make sure we’re using the latest Homebrew.
 brew update
+# Upgrade any already-installed formulae.
+brew upgrade --all
 
 # Install data stores
 brew install mysql
@@ -29,6 +30,5 @@ brew install elasticsearch
 # Install Cask
 brew install caskroom/cask/brew-cask
 brew cask install --appdir="/Applications" mysqlworkbench
-
-# Remove outdated versions from the cellar.
-brew cleanup
+brew cask install --appdir="/Applications" mamp
+brew cask install --appdir="/Applications" mongodb

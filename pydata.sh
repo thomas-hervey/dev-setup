@@ -89,6 +89,7 @@ pip install bokeh
 pip install Flask
 pip install sqlalchemy
 #pip install mysql-python  # Python 2 only, use mysqlclient instead
+apt-get install python3-dev # needed for mysqlclient
 pip install mysqlclient
 
 echo "------------------------------"

@@ -9,12 +9,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Step 1: Update the OS and Install Xcode Tools
 echo "------------------------------"
 echo "Updating OSX.  If this requires a restart, run the script again."
-# Install all available updates
-sudo softwareupdate -iva
-# Install only recommended available updates
-#sudo softwareupdate -irv
+sudo softwareupdate -iva # Install all available updates
 
 echo "------------------------------"
 echo "Installing Xcode Command Line Tools."
-# Install Xcode command line tools
-xcode-select --install
+xcode-select --install # Install Xcode command line tools
