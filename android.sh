@@ -15,17 +15,12 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Make sure we’re using the latest Homebrew.
-brew update
+brew update # Make sure we’re using the latest Homebrew.
+brew install caskroom/cask/brew-cask # Install Cask
 
-# Install Cask
-brew install caskroom/cask/brew-cask
+brew cask install --appdir="~/Applications" java # language
+brew cask install --appdir="~/Applications" intellij-idea # Java IDE
+brew cask install --appdir="~/Applications" android-studio # android IDE
+brew cask install --appdir="~/Applications" genymotion # android simulator
 
-brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" intellij-idea-ce
-brew cask install --appdir="~/Applications" android-studio
-
-brew install android-sdk
-
-# Remove outdated versions from the cellar.
-brew cleanup
+brew install android-sdk # android SDK
