@@ -53,7 +53,7 @@ function initialPull() {
         
         # make .dotfiles folder
         echo "--> Making .dotfiles folder"
-        mkdir ~/.dotfiles/dev-setup-user-edits && cd ~/.dotfiles/dev-setup-user-edits
+        mkdir ~/.dotfiles/dev-setup && cd ~/.dotfiles/dev-setup
         
         # intialize git repository
         echo "--> git init & git remote add origin git@github.com:tomtom92/dev-setup.git"
@@ -64,8 +64,8 @@ function initialPull() {
         curl -#L https://github.com/tomtom92/dev-setup.git
         
         # github pull
-        echo "-->git pull origin user-edits"
-        git pull origin user-edits;
+        echo "-->git pull origin master"
+        git pull origin master;
     else
         echo "--> You selected that there was an error. We have skipped making ~/.dotfiles folder & git init, remote add, cirl, pull. 
         I'd suggest clarifying these details then rerunning."
@@ -86,10 +86,10 @@ else
     echo "";
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         # check to see if .dotfiles install directory exists. If so, ask if installing new content
-        if [ -d ~/.dotfiles/dev-setup-user-editst ]; then
+        if [ -d ~/.dotfiles/dev-setup ]; then
             pullUpdates;
         else
-            read -p "The ~/.dotfiles/dev-setup-user-edits folder is empty. Is this the first time installing from this repo? (y) " -n 1;
+            read -p "The ~/.dotfiles/dev-setup folder is empty. Is this the first time installing from this repo? (y) " -n 1;
             if [[ $REPLY =~ ^[Yy]$ ]]; then
                 #setup intial git ssh keys
                 #setupGithubSSH;
