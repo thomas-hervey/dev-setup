@@ -67,7 +67,7 @@ function initialPull() {
         echo "-->git pull origin master"
         git pull origin master;
     else
-        echo "--> You selected that there was an error. We have skipped making ~/.dotfiles folder & git init, remote add, cirl, pull. 
+        echo "--> You selected that there was an error. We have skipped making Projects/dotfiles/dev-setup folder & git init, remote add, cirl, pull. 
         I'd suggest clarifying these details then rerunning."
     fi;
 }
@@ -86,10 +86,10 @@ else
     echo "";
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         # check to see if .dotfiles install directory exists. If so, ask if installing new content
-        if [ -d Projects/dotfiles/dev-setup ]; then
+        if [ -d ~/Projects/dotfiles/dev-setup ]; then
             pullUpdates;
         else
-            read -p "The ~/.dotfiles/dev-setup folder is empty. Is this the first time installing from this repo? (y) " -n 1;
+            read -p "The Projects/dotfiles/dev-setup folder is empty. Is this the first time installing from this repo? (y) " -n 1;
             if [[ $REPLY =~ ^[Yy]$ ]]; then
                 #setup intial git ssh keys
                 #setupGithubSSH;
