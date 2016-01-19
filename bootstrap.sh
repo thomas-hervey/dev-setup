@@ -41,7 +41,7 @@ function setupGithubSSH() {
     read -p "When you're finished type: 'Y' " -n 1;
     echo "";
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        pullUpdates;
+        initialPull;
     fi;
 }
 
@@ -74,7 +74,8 @@ function initialPull() {
 
 function pullUpdates() {
     echo "PULLING UPDATES"
-    # rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
+    git pull
+    # rsync --exclude ".git/" --exclude ".DS_Store" \
     #     --exclude "README.md" --exclude "LICENSE" -avh --no-perms . ~;
     # source .bash_profile;
 }
@@ -92,8 +93,8 @@ else
             read -p "The Projects/dotfiles/dev-setup folder is empty. Is this the first time installing from this repo? (y) " -n 1;
             if [[ $REPLY =~ ^[Yy]$ ]]; then
                 #setup intial git ssh keys
-                #setupGithubSSH;
-                initialPull;
+                setupGithubSSH;
+                pullUpdates;
             else
                 initialPull;
             fi;
