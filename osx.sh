@@ -577,7 +577,7 @@ sudo mdutil -E / > /dev/null
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-# Use a modified version of the Solarized Dark theme by default in Terminal.app
+# Use a modified version of the Solarized Light theme by default in Terminal.app
 osascript <<EOD
 
 tell application "Terminal"
@@ -585,7 +585,7 @@ tell application "Terminal"
     local allOpenedWindows
     local initialOpenedWindows
     local windowID
-    set themeName to "Solarized Dark xterm-256color"
+    set themeName to "Solarized Light xterm-256color"
 
     (* Store the IDs of all the open terminal windows. *)
     set initialOpenedWindows to id of every window
@@ -645,12 +645,15 @@ start_if_needed() {
   true
 }
 
-# Install the Solarized Dark theme for iTerm
+# Install the Solarized Light theme for iTerm
 start_if_needed iTerm
-open "${HOME}/init/Solarized Dark.itermcolors"
+open "${HOME}/init/Solarized Light.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+# Set iterm profile details
+defaults read init/com.googlecode.iterm2
 
 ###############################################################################
 # Time Machine                                                                #
