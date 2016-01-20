@@ -148,6 +148,7 @@ brew cask install --appdir="/Applications" dash # api documentation
 brew cask install --appdir="/Applications" github-desktop # code repository
 brew cask install --appdir="/Applications" heroku-toolbelt # heroku command line
 brew cask install --appdir="/Applications" lightpaper # mac markup editor
+brew cask install --appdir="/Applications" intellij-idea # Java IDE
 brew cask install --appdir="/Applications" mactex # mac TeX distribution
 brew cask install --appdir="/Applications" processing # visual coding sandbox
 brew cask install --appdir="/Applications" pycharm # python IDE
