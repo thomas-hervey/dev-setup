@@ -123,6 +123,7 @@ brew install webkit2png
 brew install zopfli
 brew install pkg-config libffi
 brew install pandoc
+brew install r
 
 # Lxml and Libxslt
 brew install libxml2
@@ -147,11 +148,12 @@ brew cask install --appdir="/Applications" dash # api documentation
 brew cask install --appdir="/Applications" github-desktop # code repository
 brew cask install --appdir="/Applications" heroku-toolbelt # heroku command line
 brew cask install --appdir="/Applications" lightpaper # mac markup editor
+#brew cask install --appdir="/Applications" intellij-idea # Java IDE
 brew cask install --appdir="/Applications" mactex # mac TeX distribution
 brew cask install --appdir="/Applications" processing # visual coding sandbox
 brew cask install --appdir="/Applications" pycharm # python IDE
 brew cask install --appdir="/Applications" rstudio # R IDE
-brew cask install --appdir="/Applications" sublime-text3 # code text editor
+brew cask install --appdir="/Applications" sublime-text # code text editor
 brew cask install --appdir="/Applications" textwrangler # basic text editor
 brew cask install --appdir="/Applications" vagrant # virtual environments
 brew cask install --appdir="/Applications" vagrant-manager
@@ -162,7 +164,9 @@ brew cask install --appdir="/Applications" google-chrome # browser
 brew cask install --appdir="/Applications" google-drive # cloud storage
 brew cask install --appdir="/Applications" google-earth # earth
 brew cask install --appdir="/Applications" google-photos-backup # photos
+brew cask install --appdir="/Applications" google-hangouts # hangouts chat
 brew cask install --appdir="/Applications" google-refine # messy data helper
+
 
 # Storage casks
 brew cask install --appdir="/Applications" box-sync # cloud storage

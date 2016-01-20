@@ -19,7 +19,6 @@ brew update # Make sure we’re using the latest Homebrew.
 brew install caskroom/cask/brew-cask # Install Cask
 
 brew cask install --appdir="~/Applications" java # language
-brew cask install --appdir="~/Applications" intellij-idea # Java IDE
 brew cask install --appdir="~/Applications" android-studio # android IDE
 brew cask install --appdir="~/Applications" genymotion # android simulator
 
