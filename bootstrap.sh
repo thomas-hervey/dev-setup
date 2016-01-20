@@ -23,7 +23,7 @@ function setupGithubSSH() {
     echo "insalling git"
     git clone https://github.com/git/git
     echo "set git globals"
-    
+
     echo "--> Lists the files in your .ssh directory, if they exist"
     ls -al ~/.ssh
     echo "--> Creates a new ssh key, using the provided email as a label"
@@ -36,8 +36,8 @@ function setupGithubSSH() {
     pbcopy < ~/.ssh/id_rsa.pub
     echo "Go ahead and add the copied key to Github. To do this... "
     echo "
-    In the top right corner of any page, click your profile photo, then click SETTINGS. 
-    In the user settings sidebar, click SSH keys. Click Add SSH key. 
+    In the top right corner of any page, click your profile photo, then click SETTINGS.
+    In the user settings sidebar, click SSH keys. Click Add SSH key.
     In the Title field, add a descriptive label for the new key. ie.'Thomas' MacBook Pro' .
     Paste your key into the 'Key' field. Click Add key."
     read -p "When you're finished type: 'Y' " -n 1;
@@ -52,24 +52,28 @@ function initialPull() {
     ssh -T git@github.com
     read -p "Hopefully there weren't any warnings. Does everything above look okay? When you're finished type: 'Y' " -n 1;
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        
+
         # make .dotfiles folder
-        echo "--> Making .dotfiles folder"
-        mkdir Projects/dotfiles/dev-setup && cd Projects/dotfiles/dev-setup
-        
+        echo "--> Making ~/Projects/dotfiles folder"
+        mkdir ~/Projects
+        mkdir ~/Projects/dotfiles
+        mkdir ~/Projects/dotfiles/dev-setup && cd ~/Projects/dotfiles/dev-setup
+
         # intialize git repository
         echo "--> git init & git remote add origin git@github.com:tomtom92/dev-setup.git"
         git init && git remote add origin git@github.com:tomtom92/dev-setup.git
-        
-        # initial github grab
-        echo "--> curl"
-        curl -#L https://github.com/tomtom92/dev-setup.git
-        
+
+        # #initial github grab
+#         echo "--> curl"
+#         curl -#L https://github.com/tomtom92/dev-setup.git
+
+
         # github pull
-        echo "-->git pull origin master"
+        echo "-->git fetch origin | it pull origin master"
+        git fetch origin;
         git pull origin master;
     else
-        echo "--> You selected that there was an error. We have skipped making Projects/dotfiles/dev-setup folder & git init, remote add, cirl, pull. 
+        echo "--> You selected that there was an error. We have skipped making Projects/dotfiles/dev-setup folder & git init, remote add, cirl, pull.
         I'd suggest clarifying these details then rerunning."
     fi;
 }
@@ -97,6 +101,8 @@ else
                 #setup intial git ssh keys
                 setupGithubSSH;
                 pullUpdates;
+                cd ~/Projects/dotfiles/dev-setup;
+                pwd;
             else
                 initialPull;
                 pullUpdates;
