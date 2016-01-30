@@ -97,4 +97,4 @@ echo "Script completed."
 echo "Usage: workon py2-data for Python2"
 echo "Usage: workon py3-data for Python3"
 
-echo "figure out what to do with: brew install libmagic"
+echo "figure out what to do with: brew install libmagic : pip install python-magic"
