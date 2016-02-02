@@ -48,6 +48,7 @@ mkvirtualenv py2-data
 workon py2-data
 
 # Install Python data modules
+pip install nltk
 pip install numpy
 pip install scipy
 pip install matplotlib
@@ -75,10 +76,11 @@ mkvirtualenv --python=/usr/local/bin/python3 py3-data
 workon py3-data
 
 # Install Python data modules
+pip install nltk
 pip install numpy
 pip install scipy
 pip install matplotlib
-pip install pandas
+pip install pandasn
 pip install sympy
 pip install nose
 pip install unittest2
