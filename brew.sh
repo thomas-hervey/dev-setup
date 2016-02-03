@@ -150,6 +150,7 @@ brew cask install --appdir="/Applications" heroku-toolbelt # heroku command line
 #brew cask install --appdir="/Applications" intellij-idea # Java IDE
 brew cask install --appdir="/Applications" macdown # mac markup editor
 brew cask install --appdir="/Applications" mactex # mac TeX distribution
+brew cask install --appdir="/Applications" phantomjs # full stack (without browser)
 brew cask install --appdir="/Applications" processing # visual coding sandbox
 brew cask install --appdir="/Applications" pycharm # python IDE
 brew cask install --appdir="/Applications" rstudio # R IDE
