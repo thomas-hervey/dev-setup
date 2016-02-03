@@ -63,6 +63,7 @@ pip install bokeh
 pip install Flask
 pip install sqlalchemy
 pip install mysql-python
+pip install selenium
 
 ###############################################################################
 # Python 3 Virtual Enviroment                                                 #
@@ -93,6 +94,7 @@ pip install sqlalchemy
 #pip install mysql-python  # Python 2 only, use mysqlclient instead
 apt-get install python3-dev # needed for mysqlclient
 pip install mysqlclient
+pip install selenium
 
 echo "------------------------------"
 echo "Script completed."
