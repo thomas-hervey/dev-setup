@@ -124,7 +124,7 @@ brew install zopfli
 brew install pkg-config libffi
 brew install pandoc
 brew install r
-brew install tesseract
+brew install tesseract # OCR library
 
 # Lxml and Libxslt
 brew install libxml2
