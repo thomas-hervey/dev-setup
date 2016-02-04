@@ -64,6 +64,8 @@ pip install Flask
 pip install sqlalchemy
 pip install mysql-python
 pip install selenium
+pip install pillow
+pip install pytesseract
 
 ###############################################################################
 # Python 3 Virtual Enviroment                                                 #
@@ -95,6 +97,8 @@ pip install sqlalchemy
 apt-get install python3-dev # needed for mysqlclient
 pip install mysqlclient
 pip install selenium
+pip install pillow
+pip install pytesseract
 
 echo "------------------------------"
 echo "Script completed."
