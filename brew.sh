@@ -125,6 +125,7 @@ brew install pkg-config libffi
 brew install pandoc
 brew install r
 brew install tesseract # OCR library
+brew install tor # tor browser
 
 # Lxml and Libxslt
 brew install libxml2
