@@ -32,3 +32,4 @@ brew install caskroom/cask/brew-cask
 brew cask install --appdir="/Applications" mysqlworkbench
 brew cask install --appdir="/Applications" mamp
 brew cask install --appdir="/Applications" mongodb
+brew cask install --appdir="/Applications" sqlprosqlite
