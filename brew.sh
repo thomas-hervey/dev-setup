@@ -149,7 +149,7 @@ brew cask install --appdir="/Applications" atom # hackable code text editor
 brew cask install --appdir="/Applications" dash # api documentation
 brew cask install --appdir="/Applications" github-desktop # code repository
 brew cask install --appdir="/Applications" heroku-toolbelt # heroku command line
-#brew cask install --appdir="/Applications" intellij-idea # Java IDE
+#brew cask install --appdir="/Applications" intellij-idea # Java IDE (~issues)
 brew cask install --appdir="/Applications" macdown # mac markup editor
 brew cask install --appdir="/Applications" mactex # mac TeX distribution
 brew cask install --appdir="/Applications" phantomjs # full stack (without browser)
@@ -185,12 +185,14 @@ brew cask install --appdir="/Applications" microsoft-office # office suite
 brew cask install --appdir="/Applications" appcleaner # application cleaner
 brew cask install --appdir="/Applications" avira-antivirus # mac antivirus
 brew cask install --appdir="/Applications" caffeine # keep system awake
+brew cask install --appdir="/Applications" cyberduck # SSH / FTP client
 brew cask install --appdir="/Applications" flash # adobe flash
 brew cask install --appdir="/Applications" flash-player # adobe plash player
 brew cask install --appdir="/Applications" flux # screen ergonomics
 brew cask install --appdir="/Applications" onyx # cleaning utility
 brew cask install --appdir="/Applications" silverlight # microsoft's flash
 brew cask install --appdir="/Applications" the-unarchiver # archive utility
+brew cask install --appdir="/Applications" tunnelbear # free VPN client
 
 # Misc. casks
 brew cask install --appdir="/Applications" firefox # when chrome sucks
