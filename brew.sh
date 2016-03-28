@@ -189,6 +189,8 @@ brew cask install --appdir="/Applications" cyberduck # SSH / FTP client
 brew cask install --appdir="/Applications" flash # adobe flash
 brew cask install --appdir="/Applications" flash-player # adobe plash player
 brew cask install --appdir="/Applications" flux # screen ergonomics
+brew cask install --appdir="/Applications" lastpass # password manager
+brew cask install --appdir="/Applications" malwarebytes-anti-malware # anti-malware
 brew cask install --appdir="/Applications" onyx # cleaning utility
 brew cask install --appdir="/Applications" silverlight # microsoft's flash
 brew cask install --appdir="/Applications" the-unarchiver # archive utility
@@ -197,6 +199,7 @@ brew cask install --appdir="/Applications" tunnelbear # free VPN client
 # Misc. casks
 brew cask install --appdir="/Applications" firefox # when chrome sucks
 brew cask install --appdir="/Applications" gdal-framework # open GIS framework
+brew cask install --appdir="/Applications" lastfm # music / video
 brew cask install --appdir="/Applications" qgis # open source GIS
 brew cask install --appdir="/Applications" skype # where the chatting happens
 brew cask install --appdir="/Applications" spotify # where the magic happens
