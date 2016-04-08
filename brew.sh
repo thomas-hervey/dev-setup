@@ -99,41 +99,43 @@ brew install xpdf
 brew install xz
 
 # Install other useful binaries.
-brew install ack
-brew install dark-mode
-brew install unar
-brew install pkg-config
+brew install ack # like grep
+brew install dark-mode # toggle OSX dark mode
+brew install unar # unarchiver
+brew install pkg-config # compiling helper
 #brew install exiv2
-brew install git
-brew install git-lfs
-brew install git-flow
-brew install git-extras
-brew install imagemagick --with-webp
-brew install lua
-brew install lynx
-brew install p7zip
-brew install pigz
-brew install pv
-brew install rename
-brew install rhino
-brew install speedtest_cli
-brew install ssh-copy-id
-brew install tree
-brew install webkit2png
-brew install zopfli
-brew install pkg-config libffi
-brew install pandoc
-brew install r
+brew install git # source control
+brew install git-lfs # versioning larger files
+brew install git-flow # Vincent Driessen's branching model
+brew install git-extras # git utilities
+brew install imagemagick --with-webp # bitmap images
+brew install lua # scripting language
+brew install lynx # text web browser
+brew install p7zip # port of 7za.exe for POSIX
+brew install pigz # parallel gzip
+brew install pv # monitor pipe data
+brew install rename # rename commands
+brew install rhino # JS written in Java
+brew install speedtest_cli # test bandwidth / speed
+brew install ssh-copy-id # remote SSH
+brew install tree # directory listing
+brew install webkit2png # webpage screenshot
+brew install zopfli # zlib compression
+brew install pkg-config libffi # compression
+
+brew install jena # Apache Jena (SW & LD)
+brew install pandoc # Universal document converter
+brew install r # Stats programming language
 brew install tesseract # OCR library
 brew install tor # tor browser
 
 # Lxml and Libxslt
-brew install libxml2
-brew install libxslt
+brew install libxml2 # XML C parser by Gnome project
+brew install libxslt # XSLT C parser by Gnome project
 brew link libxml2 --force
 brew link libxslt --force
 
-# Install Heroku
+# Install Heroku (cloud app platform)
 brew install heroku-toolbelt
 heroku update
 
