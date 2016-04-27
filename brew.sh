@@ -199,6 +199,7 @@ brew cask install --appdir="/Applications" the-unarchiver # archive utility
 brew cask install --appdir="/Applications" tunnelbear # free VPN client
 
 # Misc. casks
+brew cask install --appdir="/Applications" vivaldi # fun new web browser
 brew cask install --appdir="/Applications" firefox # when chrome sucks
 brew cask install --appdir="/Applications" gdal-framework # open GIS framework
 brew cask install --appdir="/Applications" lastfm # music / video
