@@ -20,7 +20,7 @@ function runDots() {
         #     ./bootstrap.sh
         # fi
         if [ $ARG == "osxprep" ] || [ $ARG == "all" ]; then
-            # Run the osxprep.sh & shell.sh Scripts
+            # Run the osxprep.sh script
             echo ""
             echo "------------------------------"
             echo "****** SELECTED OSXPREP ******"
@@ -29,8 +29,8 @@ function runDots() {
             echo ""
             ./osxprep.sh
         fi
-        if [ $ARG == "osxprep" ] || [ $ARG == "all" ]; then
-            # Run the osxprep.sh & shell.sh Scripts
+        if [ $ARG == "shell" ] || [ $ARG == "all" ]; then
+            # Run the shell.sh script
             echo ""
             echo "------------------------------"
             echo "****** SELECTED SHELL ******"
@@ -41,7 +41,7 @@ function runDots() {
             ./shell.sh
         fi
         if [ $ARG == "brew" ] || [ $ARG == "all" ]; then
-            # Run the brew.sh Script
+            # Run the brew.sh script
             echo ""
             echo "------------------------------"
             echo "******** SELECTED BREW *******"
@@ -54,7 +54,7 @@ function runDots() {
             ./brewCleanup.sh
         fi
         if [ $ARG == "osx" ] || [ $ARG == "all" ]; then
-            # Run the osx.sh Script
+            # Run the osx.sh script
             echo ""
             echo "------------------------------"
             echo "******** SELECTED OSX ********"
@@ -65,7 +65,7 @@ function runDots() {
             ./osx.sh
         fi
         if [ $ARG == "pydata" ] || [ $ARG == "all" ]; then
-            # Run the pydata.sh Script
+            # Run the pydata.sh script
             echo "------------------------------"
             echo "****** SELECTED PYDATA *******"
             echo "Setting up Python data development environment."
@@ -75,7 +75,7 @@ function runDots() {
             ./pydata.sh
         fi
         if [ $ARG == "aws" ] || [ $ARG == "all" ]; then
-            # Run the aws.sh Script
+            # Run the aws.sh script
             echo "------------------------------"
             echo "******** SELECTED AWS ********"
             echo "Setting up AWS development environment."
