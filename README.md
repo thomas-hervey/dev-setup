@@ -7,7 +7,7 @@ dev-setup
 
 ## MODIFICATION
 
-This code has been forked from Donne Martin's dev-setup. Please see his work before looing into this repository. I have made subjective alterations for my needs.
+This code has been forked from Donne Martin's dev-setup. Please see his work before looing into this repository. I have made subjective alterations for my needs. For example, as of now, I don't use the 'bootstrap.sh' file at all.
 
 ## Motivation
 
