@@ -37,78 +37,96 @@ echo "" >> $BASH_PROFILE_PATH
 source $EXTRA_PATH
 
 ###############################################################################
-# Python 2 Virtual Enviroment                                                 #
+# Python 2 Virtual Enviroments                                                #
 ###############################################################################
 
 echo "------------------------------"
-echo "Setting up py2-data virtual environment."
+echo "Setting up py2-total virtual environment."
 
-# Create a Python2 data environment
-mkvirtualenv py2-data
-workon py2-data
+# Create a Python2 (all packages) environment
+mkvirtualenv py2-total
+workon py2-total
 
-# Install Python data modules
-pip install nltk
-pip install numpy
-pip install scipy
-pip install matplotlib
-pip install pandas
-pip install sympy
-pip install nose
-pip install unittest2
-pip install seaborn
-pip install scikit-learn
-pip install "ipython[all]"
-pip install bokeh
-pip install Flask
-pip install sqlalchemy
-pip install mysql-python
-pip install selenium
-pip install pillow
-pip install pytesseract
+### COMMON ###
+pip install matplotlib        # plotting package
+pip install numpy             # data array processing
+pip install pandas            # data structures
+pip install scipy             # scientific library
+pip install scikit-learn      # machine learning and data mining
+pip install sympy             # computer algebra system (CAS)
+pip install "ipython[all]"    # interactive python shell
 
-###############################################################################
-# Python 3 Virtual Enviroment                                                 #
-###############################################################################
+### package utils ###
+pip install distribute        # easily download, build, etc. Python packages
+pip install pbr               # managing setuptools packaging
+pip install pip               # PyPA recommended package installer
+pip install wheel             # a built-package format for Python
+pip install setuptools        # easily download, build, etc. Python packages
+pip install stevedore         # manage dynamic plugins for Python applications
+pip install six               # Python 2 & 3 compatibility util
+pip install virtualenv        # virtual Python Environment builder
+pip install virtualenv-clone  # script to clone virtualenvs
+pip install virtualenvwrapper # enhancements to virtualenv
 
-echo "------------------------------"
-echo "Setting up py3-data virtual environment."
+### testing ###
+pip install coverage          # code coverage measurement
+pip install nose              # extends unittest to make testing easier
+pip install unittest2         # unit testing
 
-# Create a Python3 data environment
-mkvirtualenv --python=/usr/local/bin/python3 py3-data
-workon py3-data
+### plotting ###
+pip install bokeh             # statistical interactive HTML plots for Python
+pip install seaborn           # statistical data visualization
 
-# Install Python data modules
-pip install nltk
-pip install numpy
-pip install scipy
-pip install matplotlib
-pip install pandasn
-pip install sympy
-pip install nose
-pip install unittest2
-pip install seaborn
-pip install scikit-learn
-pip install "ipython[all]"
-pip install bokeh
-pip install Flask
-pip install sqlalchemy
-#pip install mysql-python  # Python 2 only, use mysqlclient instead
-apt-get install python3-dev # needed for mysqlclient
-pip install mysqlclient
-pip install selenium
-pip install pillow
-pip install pytesseract
+### web development ###
+pip install django            # web development framework
+pip install Flask             # microframework
+pip install werkzeug          # web development swiss army knife
+pip install zope.interface    # interfaces for Python
 
-###############################################################################
-# Install IPython Profile
-###############################################################################
+### database ###
+pip install boto              # AWS SDK
+pip install mysql-python      # interface for MySQL
+pip install psycopg2          # PostgreSQL database adapter
+pip install PyMySQL           # MySQL driver
+pip install sqlalchemy        # database abstraction
 
-echo "------------------------------"
-echo "Installing IPython Notebook Default Profile"
+### scraping & gathering ###
+pip install beautifulsoup4    # screen-scraping library
+pip install feedfinder2       # finds feed URLs for webpage
+pip install feedparser        # universal feed parser
+pip install jellyfish         # approximate and phonetic string matching
+pip install jieba             # Chinese word segmentation util
+pip install newspaper         # article discovery & extraction
+pip install nltk              # natural language toolkit
+pip install Pillow            # Python imaging
+pip install pytesseract       # Tesseract (OCR)
 
-# Add the IPython profile
-cp -r init/profile_default/ ~/.ipython/profile_default
+### spatial ###
+pip install geograpy          # extract countries, cities, etc from a URL/text
+pip install geopy             # geocoding library for Python
+pip install Shapely           # geometric objects, predicates, and operations
+pip install pycountry         # ISO country, language, etc. script definitions
+pip install python-dateutil   # date-time extension util
+pip install pytz              # timezone definitions
+
+### data formatting ###
+pip install pyasn1            # ASN.1 util
+pip install cssselect         # translates CSS selectors to XPATH
+pip install docutils          # plaintext documentation to useful formats
+pip install jmespath          # JSON matching expressions
+pip install lxml              # XML: combine libxml2/libxslt w/ ElementTree API
+pip install python-magic      # file type identification using libmagic
+pip install PyYAML            # YAML (human friendly data serialization)
+pip install simplejson        # JSON de/encoder
+
+### networking ###
+pip install certifi           # root certificates validating SSL trustworthiness
+pip install requests          # HTTP for humans
+pip install selenium          # automating web browsers
+pip install tldextract        # separate TDL from registered subdomain of URL
+pip install tornado           # asynchronous networking
+pip install twisted           # asynchronous networking framework
+
 
 ###############################################################################
 # Install IPython Profile
