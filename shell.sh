@@ -36,16 +36,17 @@ function setupGithubSSH() {
         git clone https://github.com/git/git
     fi;
 
+		echo ""
     echo "Please enter your github email: "
-    read github_email_input
+    read github_email
     echo "Please enter your github name: "
-    read github_email_name
-    echo "You entered: $github_email_input"
-    echo "You entered: $github_email_name"
+    read github_name
+    echo "You entered email: $github_email"
+    echo "You entered name: $github_name"
     read -p "Are these correct? (y/n) " -n 1;
     if [[ $REPLY =~ ^[Nn]$ ]]; then
-      git config --global user.name github_email_name
-      git config --global user.email github_email_input
+      git config --global user.name github_name
+      git config --global user.email github_email
     fi;
 
     echo "--> Lists the files in your .ssh directory, if they exist"
