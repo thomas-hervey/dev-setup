@@ -95,7 +95,7 @@ brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
+brew install homebrew/x11/xpdf
 brew install xz
 
 # Install other useful binaries.
@@ -125,6 +125,9 @@ brew install pkg-config libffi # compression
 
 brew install jena # Apache Jena (SW & LD)
 brew install pandoc # Universal document converter
+brew tap homebrew/science
+brew install gcc
+brew install Caskroom/cask/xquartz
 brew install r # Stats programming language
 brew install tesseract # OCR library
 brew install tor # tor browser
@@ -150,7 +153,6 @@ brew cask install --appdir="~/Applications" xquartz # Apple's X server
 brew cask install --appdir="/Applications" atom # hackable code text editor
 brew cask install --appdir="/Applications" dash # api documentation
 brew cask install --appdir="/Applications" github-desktop # code repository
-brew cask install --appdir="/Applications" heroku-toolbelt # heroku command line
 #brew cask install --appdir="/Applications" intellij-idea # Java IDE (~issues)
 brew cask install --appdir="/Applications" macdown # mac markup editor
 brew cask install --appdir="/Applications" mactex # mac TeX distribution
@@ -204,7 +206,7 @@ brew cask install --appdir="/Applications" firefox # when chrome sucks
 brew cask install --appdir="/Applications" gdal-framework # open GIS framework
 brew cask install --appdir="/Applications" lastfm # music / video
 brew cask install --appdir="/Applications" qgis # open source GIS
-brew cask install --appdir="/Applications" skype # where the chatting happens
+# brew cask install --appdir="/Applications" skype # where the chatting happens
 brew cask install --appdir="/Applications" spotify # where the magic happens
 brew cask install --appdir="/Applications" steam # where the fun happens
 

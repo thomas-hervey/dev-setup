@@ -194,7 +194,7 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # Turn on App Expose
-defaults write com.apple.dock scroll-to-open -bool TRUE; 
+defaults write com.apple.dock scroll-to-open -bool TRUE;
 
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
@@ -392,7 +392,7 @@ defaults write com.apple.dock show-process-indicators -bool true
 defaults write com.apple.dock launchanim -bool false
 
 # Speed up Mission Control animations
-defaults write com.apple.dock expose-animation-duration -float 0.20
+defaults write com.apple.dock expose-animation-duration -float 0.10
 
 # Don’t group windows by application in Mission Control
 # (i.e. use the old Exposé behavior instead)
@@ -412,6 +412,9 @@ defaults write com.apple.dock autohide-delay -float 0
 
 # Remove the animation when hiding/showing the Dock
 defaults write com.apple.dock autohide-time-modifier -float 0
+
+# Remove animation when opening a Quick Look window
+defaults write -g QLPanelAnimationDuration -float 0
 
 # Automatically hide and show the Dock
 ## defaults write com.apple.dock autohide -bool true
