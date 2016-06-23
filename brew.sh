@@ -131,6 +131,7 @@ brew install Caskroom/cask/xquartz
 brew install r # Stats programming language
 brew install tesseract # OCR library
 brew install tor # tor browser
+brew install zsh-syntax-highlighting # zsh shell highlighting
 
 # Lxml and Libxslt
 brew install libxml2 # XML C parser by Gnome project
@@ -205,6 +206,7 @@ brew cask install --appdir="/Applications" vivaldi # fun new web browser
 brew cask install --appdir="/Applications" firefox # when chrome sucks
 brew cask install --appdir="/Applications" gdal-framework # open GIS framework
 brew cask install --appdir="/Applications" lastfm # music / video
+brew install homebrew/python/matplotlib
 brew cask install --appdir="/Applications" qgis # open source GIS
 # brew cask install --appdir="/Applications" skype # where the chatting happens
 brew cask install --appdir="/Applications" spotify # where the magic happens

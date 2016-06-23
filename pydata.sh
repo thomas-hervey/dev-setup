@@ -20,23 +20,26 @@ echo "------------------------------"
 echo "Setting up virtual environments."
 
 # Install virtual environments globally
-# It fails to install virtualenv if PIP_REQUIRE_VIRTUALENV was true
-export PIP_REQUIRE_VIRTUALENV=false
+# It fails to install virtualenv if PIP_REQUIRE_VIRTUALENV
 pip install virtualenv
 pip install virtualenvwrapper
 
 echo "------------------------------"
 echo "Source virtualenvwrapper from ~/.extra"
 
-EXTRA_PATH=~/.extra
-echo $EXTRA_PATH
-echo "" >> $EXTRA_PATH
-echo "" >> $EXTRA_PATH
-echo "# Source virtualenvwrapper, added by pydata.sh" >> $EXTRA_PATH
-echo "export WORKON_HOME=~/.virtualenvs" >> $EXTRA_PATH
-echo "source /usr/local/bin/virtualenvwrapper.sh" >> $EXTRA_PATH
+#EXTRA_PATH=~/.extra ##commented since this should save in .zshrc instead
+ZSHRC_PATH=~/.zshrc
+echo $ZSHRC_PATH
+echo "" >> $ZSHRC_PATH
+echo "" >> $ZSHRC_PATH
+echo "# Source virtualenvwrapper, added by pydata.sh" >> $ZSHRC_PATH
+echo "export WORKON_HOME=~/.virtualenvs" >> $ZSHRC_PATH
+echo "source /usr/local/bin/virtualenvwrapper.sh" >> $ZSHRC_PATH
 echo "" >> $BASH_PROFILE_PATH
-source $EXTRA_PATH
+source $ZSHRC_PATH
+
+EXTRA_PATH=~/.extra
+echo "PIP_REQUIRE_VIRTUALENV=true" >>$EXTRA_PATH
 
 ###############################################################################
 # Python 2 Virtual Enviroments                                                #
@@ -59,7 +62,7 @@ pip install sympy             # computer algebra system (CAS)
 pip install "ipython[all]"    # interactive python shell
 
 ### package utils ###
-pip install distribute        # easily download, build, etc. Python packages
+# pip install distribute        # easily download, build, etc. Python packages ERROR
 pip install pbr               # managing setuptools packaging
 pip install pip               # PyPA recommended package installer
 pip install wheel             # a built-package format for Python
@@ -88,7 +91,7 @@ pip install zope.interface    # interfaces for Python
 ### database ###
 pip install boto              # AWS SDK
 pip install mysql-python      # interface for MySQL
-pip install psycopg2          # PostgreSQL database adapter
+# pip install psycopg2          # PostgreSQL database adapter ERROR
 pip install PyMySQL           # MySQL driver
 pip install sqlalchemy        # database abstraction
 
@@ -145,4 +148,5 @@ echo "------------------------------"
 echo "Script completed."
 echo "Usage: workon py2-data for Python2"
 
-echo "figure out what to do with: brew install libmagic : pip install python-magic"
+echo "**figure out what to do: brew install libmagic : pip install python-magic"
+echo "**make sure py2-total virtualenv installex correctly. Make sure you cannot install pip packages while deactivated."
