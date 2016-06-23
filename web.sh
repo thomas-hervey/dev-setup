@@ -26,10 +26,11 @@ brew cleanup
 brew prune
 brew doctor
 
-npm install -g coffee-script
-npm install -g grunt-cli
-npm install -g jshint
-npm install -g sass
-npm install -g bower
+npm install -g coffee-script # non-vanilla JS
+npm install -g grunt-cli	 # task manager
+npm install -g jshint		 # JS code quality
+npm install -g sass			 # css preprocessor
+npm install -g bower		 # web package manager
+npm install -g gulp  		 # task manager
 
 #gem install jekyll
