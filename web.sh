@@ -21,6 +21,17 @@ brew upgrade --all
 
 brew install node
 
+
+# setup for trellis (Roots.io)
+brew install ansible
+brew cask install --appdir="/Applications" virtualbox # virtual machines
+brew cask install --appdir="/Applications" vagrant # virtual environments
+vagrant plugin install vagrant-hostmanager
+vagrant plugin install vagrant-bindfs
+
+
+
+
 # Clean up & remove outdated versions from the cellar.
 brew cleanup
 brew prune
