@@ -151,7 +151,6 @@ brew cask install --appdir="~/Applications" java # language
 brew cask install --appdir="~/Applications" xquartz # Apple's X server
 
 # Development tool casks
-<<<<<<< HEAD
 brew cask install --appdir="/Applications" atom # hackable code text editor
 brew cask install --appdir="/Applications" dash # api documentation
 brew cask install --appdir="/Applications" github-desktop # code repository
@@ -162,6 +161,7 @@ brew cask install --appdir="/Applications" phantomjs # full stack (without brows
 brew cask install --appdir="/Applications" processing # visual coding sandbox
 brew cask install --appdir="/Applications" pycharm # python IDE
 brew cask install --appdir="/Applications" rstudio # R IDE
+brew cask install --appdir="/Applications" sourcetree # code repository
 brew cask install --appdir="/Applications" sublime-text # code text editor
 brew cask install --appdir="/Applications" textwrangler # basic text editor
 brew cask install --appdir="/Applications" vagrant # virtual environments
@@ -181,7 +181,7 @@ brew cask install --appdir="/Applications" google-refine # messy data helper
 brew cask install --appdir="/Applications" box-sync # cloud storage
 brew cask install --appdir="/Applications" dropbox # cloud storage
 
-# Productivity casks
+# Productivity cgasks
 ##brew cask install --appdir="/Applications" evernote
 brew cask install --appdir="/Applications" mendeley-desktop # reference manager
 brew cask install --appdir="/Applications" microsoft-office # office suite
