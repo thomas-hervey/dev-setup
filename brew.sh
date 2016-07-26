@@ -122,7 +122,6 @@ brew install tree # directory listing
 brew install webkit2png # webpage screenshot
 brew install zopfli # zlib compression
 brew install pkg-config libffi # compression
-
 brew install jena # Apache Jena (SW & LD)
 brew install pandoc # Universal document converter
 brew tap homebrew/science
@@ -143,7 +142,8 @@ brew link libxslt --force
 brew install heroku-toolbelt
 heroku update
 
-brew install caskroom/cask/brew-cask # Install Cask
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
 
 # Core casks
 brew cask install --appdir="~/Applications" iterm2 # terminal alternative
@@ -151,6 +151,7 @@ brew cask install --appdir="~/Applications" java # language
 brew cask install --appdir="~/Applications" xquartz # Apple's X server
 
 # Development tool casks
+<<<<<<< HEAD
 brew cask install --appdir="/Applications" atom # hackable code text editor
 brew cask install --appdir="/Applications" dash # api documentation
 brew cask install --appdir="/Applications" github-desktop # code repository
@@ -212,6 +213,9 @@ brew cask install --appdir="/Applications" qgis # open source GIS
 brew cask install --appdir="/Applications" spotify # where the magic happens
 brew cask install --appdir="/Applications" steam # where the fun happens
 brew cask install --appdir="/Applications" cura # ultimaker 3D printing
+
+#Remove comment to install LaTeX distribution MacTeX
+#brew cask install --appdir="/Applications" mactex
 
 # Install Docker, which requires virtualbox
 brew install docker # application packaging
