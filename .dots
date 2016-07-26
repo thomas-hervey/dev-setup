@@ -94,14 +94,14 @@ function runDots() {
             ./datastores.sh
             ./brewCleanup.sh
         fi
-        if [ $ARG == "web" ] || [ $ARG == "all" ]; then
-            # Run the webdev.sh Script
+        if [ $ARG == "roots" ] || [ $ARG == "all" ]; then
+            # Run the roots.sh Script
             echo "------------------------------"
-            echo "******** SELECTED WEB ********"
-            echo "Setting up web environment."
+            echo "******** SELECTED ROOTS ********"
+            echo "Setting up roots.io web environment."
             echo "------------------------------"
             echo ""
-            ./web.sh
+            ./roots.sh
         fi
         if [ $ARG == "android" ] || [ $ARG == "all" ]; then
             # Run the android.sh Script
