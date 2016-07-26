@@ -211,6 +211,7 @@ brew cask install --appdir="/Applications" qgis # open source GIS
 # brew cask install --appdir="/Applications" skype # where the chatting happens
 brew cask install --appdir="/Applications" spotify # where the magic happens
 brew cask install --appdir="/Applications" steam # where the fun happens
+brew cask install --appdir="/Applications" cura # ultimaker 3D printing
 
 # Install Docker, which requires virtualbox
 brew install docker # application packaging
