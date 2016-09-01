@@ -44,4 +44,7 @@ npm install -g sass			 # css preprocessor
 npm install -g bower		 # web package manager
 npm install -g gulp  		 # task manager
 
+# installing Ruby vrm
+\curl -sSL https://get.rvm.io | bash -s stable
+
 #gem install jekyll
