@@ -153,6 +153,7 @@ brew cask install --appdir="~/Applications" xquartz # Apple's X server
 # Development tool casks
 brew cask install --appdir="/Applications" atom # hackable code text editor
 brew cask install --appdir="/Applications" dash # api documentation
+brew cask install --appdir="/Applications" docker # software containerization
 brew cask install --appdir="/Applications" github-desktop # code repository
 #brew cask install --appdir="/Applications" intellij-idea # Java IDE (~issues)
 brew cask install --appdir="/Applications" macdown # mac markup editor
