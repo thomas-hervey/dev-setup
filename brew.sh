@@ -142,6 +142,9 @@ brew link libxslt --force
 brew install heroku-toolbelt
 heroku update
 
+brew install node # nodeJS
+brew install watchman # Facebook's file change watcher
+
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
