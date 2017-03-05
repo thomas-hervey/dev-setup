@@ -64,8 +64,140 @@ grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 
 
+<<<<<<< HEAD
 # ****************************** #
 # Install brews from brew.txt file
 <personal_preferences/brew.txt xargs brew install
 # Install brew casks from brew_cask.txt file
 <personal_preferences/brew_cask.txt xargs brew cask install --appdir="~/Applications"
+=======
+# Install other useful binaries.
+brew install ack # like grep
+brew install dark-mode # toggle OSX dark mode
+brew install unar # unarchiver
+brew install pkg-config # compiling helper
+#brew install exiv2
+brew install git # source control
+brew install git-lfs # versioning larger files
+brew install git-flow # Vincent Driessen's branching model
+brew install git-extras # git utilities
+brew install imagemagick --with-webp # bitmap images
+brew install lua # scripting language
+brew install lynx # text web browser
+brew install p7zip # port of 7za.exe for POSIX
+brew install pigz # parallel gzip
+brew install pv # monitor pipe data
+brew install rename # rename commands
+brew install rhino # JS written in Java
+brew install speedtest_cli # test bandwidth / speed
+brew install ssh-copy-id # remote SSH
+brew install tree # directory listing
+brew install webkit2png # webpage screenshot
+brew install zopfli # zlib compression
+brew install pkg-config libffi # compression
+brew install jena # Apache Jena (SW & LD)
+brew install pandoc # Universal document converter
+brew tap homebrew/science
+brew install gcc
+brew install Caskroom/cask/xquartz
+brew install r # Stats programming language
+brew install tesseract # OCR library
+brew install tor # tor browser
+brew install zsh-syntax-highlighting # zsh shell highlighting
+
+# Lxml and Libxslt
+brew install libxml2 # XML C parser by Gnome project
+brew install libxslt # XSLT C parser by Gnome project
+brew link libxml2 --force
+brew link libxslt --force
+
+# Install Heroku (cloud app platform)
+brew install heroku-toolbelt
+heroku update
+
+brew install node # nodeJS
+brew install watchman # Facebook's file change watcher
+
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+# Core casks
+brew cask install --appdir="~/Applications" iterm2 # terminal alternative
+brew cask install --appdir="~/Applications" java # language
+brew cask install --appdir="~/Applications" xquartz # Apple's X server
+
+# Development tool casks
+brew cask install --appdir="/Applications" atom # hackable code text editor
+brew cask install --appdir="/Applications" dash # api documentation
+brew cask install --appdir="/Applications" docker # software containerization
+brew cask install --appdir="/Applications" github-desktop # code repository
+#brew cask install --appdir="/Applications" intellij-idea # Java IDE (~issues)
+brew cask install --appdir="/Applications" macdown # mac markup editor
+# brew cask install --appdir="/Applications" mactex # mac TeX distribution
+brew cask install --appdir="/Applications" phantomjs # full stack (without browser)
+brew cask install --appdir="/Applications" processing # visual coding sandbox
+brew cask install --appdir="/Applications" pycharm # python IDE
+brew cask install --appdir="/Applications" rstudio # R IDE
+brew cask install --appdir="/Applications" sourcetree # code repository
+brew cask install --appdir="/Applications" sublime-text # code text editor
+brew cask install --appdir="/Applications" textwrangler # basic text editor
+brew cask install --appdir="/Applications" vagrant # virtual environments
+brew cask install --appdir="/Applications" vagrant-manager
+brew cask install --appdir="/Applications" virtualbox # virtual machines
+
+# Google casks
+brew cask install --appdir="/Applications" google-chrome # browser
+brew cask install --appdir="/Applications" google-drive # cloud storage
+brew cask install --appdir="/Applications" google-earth # earth
+brew cask install --appdir="/Applications" google-photos-backup # photos
+brew cask install --appdir="/Applications" google-hangouts # hangouts chat
+brew cask install --appdir="/Applications" google-refine # messy data helper
+
+
+# Storage casks
+brew cask install --appdir="/Applications" box-sync # cloud storage
+brew cask install --appdir="/Applications" dropbox # cloud storage
+
+# Productivity cgasks
+##brew cask install --appdir="/Applications" evernote
+brew cask install --appdir="/Applications" mendeley-desktop # reference manager
+brew cask install --appdir="/Applications" microsoft-office # office suite
+##brew cask install --appdir="/Applications" slack
+
+# Security, organization, utility casks
+brew cask install --appdir="/Applications" appcleaner # application cleaner
+brew cask install --appdir="/Applications" avira-antivirus # mac antivirus
+brew cask install --appdir="/Applications" caffeine # keep system awake
+brew cask install --appdir="/Applications" cyberduck # SSH / FTP client
+brew cask install --appdir="/Applications" flash # adobe flash
+brew cask install --appdir="/Applications" flash-player # adobe plash player
+brew cask install --appdir="/Applications" flux # screen ergonomics
+brew cask install --appdir="/Applications" lastpass # password manager
+brew cask install --appdir="/Applications" malwarebytes-anti-malware # anti-malware
+brew cask install --appdir="/Applications" onyx # cleaning utility
+brew cask install --appdir="/Applications" silverlight # microsoft's flash
+brew cask install --appdir="/Applications" the-unarchiver # archive utility
+brew cask install --appdir="/Applications" tunnelbear # free VPN client
+
+# Misc. casks
+brew cask install --appdir="/Applications" vivaldi # fun new web browser
+brew cask install --appdir="/Applications" firefox # when chrome sucks
+brew cask install --appdir="/Applications" gdal-framework # open GIS framework
+brew cask install --appdir="/Applications" lastfm # music / video
+brew install homebrew/python/matplotlib
+brew cask install --appdir="/Applications" qgis # open source GIS
+# brew cask install --appdir="/Applications" skype # where the chatting happens
+brew cask install --appdir="/Applications" spotify # where the magic happens
+brew cask install --appdir="/Applications" steam # where the fun happens
+brew cask install --appdir="/Applications" cura # ultimaker 3D printing
+
+#Remove comment to install LaTeX distribution MacTeX
+#brew cask install --appdir="/Applications" mactex
+
+# Install Docker, which requires virtualbox
+brew install docker # application packaging
+brew install boot2docker # mac docker assistant
+
+# Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+>>>>>>> origin/master
