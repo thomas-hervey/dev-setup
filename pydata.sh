@@ -46,91 +46,15 @@ echo "PIP_REQUIRE_VIRTUALENV=true" >>$EXTRA_PATH
 ###############################################################################
 
 echo "------------------------------"
-echo "Setting up py2-total virtual environment."
+echo "Setting up py2 virtual environment with virtualenv and virtualenvwrapper."
 
 # Create a Python2 (all packages) environment
-mkvirtualenv py2-total
-workon py2-total
+mkvirtualenv py2
+workon py2
 
-### COMMON ###
-pip install matplotlib        # plotting package
-pip install numpy             # data array processing
-pip install pandas            # data structures
-pip install scipy             # scientific library
-pip install scikit-learn      # machine learning and data mining
-pip install sympy             # computer algebra system (CAS)
-pip install "ipython[all]"    # interactive python shell
-
-### package utils ###
-# pip install distribute        # easily download, build, etc. Python packages ERROR
-pip install pbr               # managing setuptools packaging
-pip install pip               # PyPA recommended package installer
-pip install wheel             # a built-package format for Python
-pip install setuptools        # easily download, build, etc. Python packages
-pip install stevedore         # manage dynamic plugins for Python applications
-pip install six               # Python 2 & 3 compatibility util
-pip install virtualenv        # virtual Python Environment builder
-pip install virtualenv-clone  # script to clone virtualenvs
-pip install virtualenvwrapper # enhancements to virtualenv
-
-### testing ###
-pip install coverage          # code coverage measurement
-pip install nose              # extends unittest to make testing easier
-pip install unittest2         # unit testing
-
-### plotting ###
-pip install bokeh             # statistical interactive HTML plots for Python
-pip install seaborn           # statistical data visualization
-
-### web development ###
-pip install django            # web development framework
-pip install Flask             # microframework
-pip install werkzeug          # web development swiss army knife
-pip install zope.interface    # interfaces for Python
-
-### database ###
-pip install boto              # AWS SDK
-pip install mysql-python      # interface for MySQL
-# pip install psycopg2          # PostgreSQL database adapter ERROR
-pip install PyMySQL           # MySQL driver
-pip install sqlalchemy        # database abstraction
-
-### scraping & gathering ###
-pip install beautifulsoup4    # screen-scraping library
-pip install feedfinder2       # finds feed URLs for webpage
-pip install feedparser        # universal feed parser
-pip install jellyfish         # approximate and phonetic string matching
-pip install jieba             # Chinese word segmentation util
-pip install newspaper         # article discovery & extraction
-pip install nltk              # natural language toolkit
-pip install Pillow            # Python imaging
-pip install pytesseract       # Tesseract (OCR)
-
-### spatial ###
-pip install geograpy          # extract countries, cities, etc from a URL/text
-pip install geopy             # geocoding library for Python
-pip install Shapely           # geometric objects, predicates, and operations
-pip install pycountry         # ISO country, language, etc. script definitions
-pip install python-dateutil   # date-time extension util
-pip install pytz              # timezone definitions
-
-### data formatting ###
-pip install pyasn1            # ASN.1 util
-pip install cssselect         # translates CSS selectors to XPATH
-pip install docutils          # plaintext documentation to useful formats
-pip install jmespath          # JSON matching expressions
-pip install lxml              # XML: combine libxml2/libxslt w/ ElementTree API
-pip install python-magic      # file type identification using libmagic
-pip install PyYAML            # YAML (human friendly data serialization)
-pip install simplejson        # JSON de/encoder
-
-### networking ###
-pip install certifi           # root certificates validating SSL trustworthiness
-pip install requests          # HTTP for humans
-pip install selenium          # automating web browsers
-pip install tldextract        # separate TDL from registered subdomain of URL
-pip install tornado           # asynchronous networking
-pip install twisted           # asynchronous networking framework
+# **************** #
+# install packages
+pip install -r personal_preferences/py2_requirements.txt
 
 
 ###############################################################################
@@ -146,7 +70,4 @@ cp -r init/profile_default/ ~/.ipython/profile_default
 
 echo "------------------------------"
 echo "Script completed."
-echo "Usage: workon py2-data for Python2"
-
-echo "**figure out what to do: brew install libmagic : pip install python-magic"
-echo "**make sure py2-total virtualenv installex correctly. Make sure you cannot install pip packages while deactivated."
+echo "Usage: workon py2 for Python2"

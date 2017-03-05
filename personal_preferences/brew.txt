@@ -1,0 +1,105 @@
+### Install more recent versions of some OS X tools.
+vim --override-system-vi
+homebrew/dupes/grep
+homebrew/dupes/openssh
+homebrew/dupes/screen
+homebrew/php/php55 --with-gmp
+
+### Install font tools.
+brew tap bramstein/webfonttools
+sfnt2woff
+sfnt2woff-zopfli
+woff2
+
+### Install some CTF tools; see https://github.com/ctfs/write-ups.
+aircrack-ng
+bfg
+binutils
+#binwalk  'got stuck on install last time it was run'
+cifer
+dex2jar
+dns2tcp
+fcrackzip
+foremost
+hashpump
+hydra
+john
+knock
+netpbm
+nmap
+pngcheck
+socat
+sqlmap
+tcpflow
+tcpreplay
+tcptrace
+ucspi-tcp # `tcpserver` etc.
+homebrew/x11/xpdf
+xz
+
+### Install other useful binaries.
+ack # like grep
+dark-mode # toggle OSX dark mode
+unar # unarchiver
+pkg-config # compiling helper
+#exiv2
+git # source control
+git-lfs # versioning larger files
+git-flow # Vincent Driessen's branching model
+git-extras # git utilities
+imagemagick --with-webp # bitmap images
+lua # scripting language
+lynx # text web browser
+p7zip # port of 7za.exe for POSIX
+pigz # parallel gzip
+pv # monitor pipe data
+rename # rename commands
+rhino # JS written in Java
+speedtest_cli # test bandwidth / speed
+ssh-copy-id # remote SSH
+tree # directory listing
+webkit2png # webpage screenshot
+zopfli # zlib compression
+pkg-config libffi # compression
+jena # Apache Jena (SW & LD)
+pandoc # Universal document converter
+brew tap homebrew/science
+gcc
+Caskroom/cask/xquartz
+r # Stats programming language
+tesseract # OCR library
+tor # tor browser
+zsh-syntax-highlighting # zsh shell highlighting
+
+### Lxml and Libxslt
+libxml2 # XML C parser by Gnome project
+libxslt # XSLT C parser by Gnome project
+brew link libxml2 --force
+brew link libxslt --force
+
+### Install Heroku (cloud app platform)
+heroku
+heroku-toolbelt
+heroku update
+
+### Install Docker, which requires virtualbox
+boot2docker # mac docker assistant
+docker # application deployment containerization
+
+### more utils
+ansible # IT automation
+composer # PHP dependency management
+elasticsearch # search utility
+flow # Static type checker for JavaScript
+fontconfig # customizing font access
+freetype # render fonts
+freexl # extract data from Excel
+gdal # GDAL spatial software
+matplotlib # core plot utility
+mongodb # NoSQL database
+mysql # popular SQL
+node # nodeJS
+numpy # core utility for python
+postgresql # NoSQL database
+sqlite # mySQL lite
+watchman # Facebook's file change watcher

@@ -167,7 +167,6 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo "*In Trellis, provision the server by running: ansible-playbook server.yml -e env=staging"
   echo "If this has run successfully, go to the project's root folder and run git init, then git push. Using the github gui gives issues."
   echo "*Run ./deploy.sh staging roots1.com"
-
 fi;
 
 

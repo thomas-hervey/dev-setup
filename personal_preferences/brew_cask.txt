@@ -1,0 +1,85 @@
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+### Core casks
+iterm2 # terminal alternative
+java # language
+xquartz # Apple's X server
+
+### Development tool casks
+atom # hackable code text editor
+dash # api documentation
+docker # software containerization
+github-desktop # code repository
+#intellij-idea # Java IDE (~issues)
+macdown # mac markup editor
+# mactex # mac TeX distribution
+mamp # Mac web server
+mongodb # NoSQL database
+mysqlworkbench # MySQL interface
+phantomjs # full stack (without browser)
+postgres # open source database
+processing # visual coding sandbox
+pycharm # Python IDE
+rstudio # R IDE
+sourcetree # code repository
+sublime-text # code text editor
+textwrangler # basic text editor
+vagrant # virtual environments
+vagrant-manager
+virtualbox # virtual machines
+webstorm # JavaScript IDE
+
+### Google casks
+google-chrome # browser
+google-drive # cloud storage
+google-earth # earth
+google-photos-backup # photos
+google-hangouts # hangouts chat
+google-refine # messy data helper
+
+
+### Storage casks
+box-sync # cloud storage
+dropbox # cloud storage
+
+### Productivity casks
+#evernote
+mendeley-desktop # reference manager
+microsoft-office # office suite
+slack
+
+### Security, organization, utility casks
+appcleaner # application cleaner
+avira-antivirus # mac antivirus
+caffeine # keep system awake
+cyberduck # SSH / FTP client
+flash # adobe flash
+flash-player # adobe plash player
+flux # screen ergonomics
+lastpass # password manager
+malwarebytes-anti-malware # anti-malware
+onyx # cleaning utility
+silverlight # microsoft's flash
+the-unarchiver # archive utility
+tunnelbear # free VPN client
+
+### Misc. casks
+vivaldi # fun new web browser
+firefox # when chrome sucks
+gdal-framework # open GIS framework
+lastfm # music / video
+brew install homebrew/python/matplotlib
+qgis # open source GIS
+# skype # where the chatting happens
+spotify # where the magic happens
+steam # where the fun happens
+cura # ultimaker 3D printing
+inkscape # Adobe Illustrator alternative
+
+
+#mactex # LaTeX distribution MacTeX
+
+
+### Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
+qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package

@@ -508,7 +508,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Projects/dotfiles/dev-setup/iterm</string>
+	<string>~/Projects/admin/dotfiles/dev-setup/iterm/iterm2-colors-solarized</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -544,9 +544,9 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>229 408 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-31 1125 1016 502 -294 900 1920 1057 </string>
+	<string>183 349 796 473 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>666 978 955 979 -294 900 1920 1057 </string>
+	<string>354 299 570 452 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1867,21 +1867,29 @@
 			<true/>
 			<key>Selected Text Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.56363654136657715</real>
+				<real>0.89629626274108887</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.56485837697982788</real>
+				<real>0.90689241886138916</real>
 				<key>Red Component</key>
-				<real>0.50599193572998047</real>
+				<real>0.14921286702156067</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.19370138645172119</real>
+				<real>0.88224005699157715</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.15575926005840302</real>
+				<real>0.76878166198730469</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.32787275314331055</real>
 			</dict>
 			<key>Semantic History</key>
 			<dict>
@@ -2034,19 +2042,25 @@
 	<key>NoSyncInstallationId</key>
 	<string>D75CE05A-D1F3-40B0-BE97-F4B565D3D8AF</string>
 	<key>NoSyncLastTipTime</key>
-	<real>490907916.42740601</real>
+	<real>494105861.35578501</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
+	<key>NoSyncSuppressWarningAboutInlineImages</key>
+	<true/>
+	<key>NoSyncSuppressWarningAboutInlineImages_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>486582580.47995102</real>
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>486455593.80859202</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
 	<real>486455593.80897301</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
@@ -2063,6 +2077,17 @@
 		<string>0010</string>
 		<string>0011</string>
 		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -2112,7 +2137,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/Thomas/Projects/dotfiles/dev-setup/iterm</string>
+	<string>/Users/Thomas/Projects/admin/dotfiles/dev-setup/iterm</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -2132,7 +2157,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-07-22T19:18:53Z</date>
+	<date>2016-12-10T19:54:41Z</date>
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>ShowBookmarkName</key>
@@ -2183,6 +2208,10 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.5</string>
+	<string>3.0.12</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>

@@ -1,0 +1,122 @@
+### COMMON ###
+matplotlib        # plotting package
+numpy             # data array processing
+pandas            # data structures
+scipy             # scientific library
+scikit-learn      # machine learning and data mining
+sympy             # computer algebra system (CAS)
+ipython           # interactive python shell
+
+### package utils ###
+# distribute      # easily download, build, etc. Python packages ERROR
+pbr               # managing setuptools packaging
+pip               # PyPA recommended package installer
+wheel             # a built-package format for Python
+setuptools        # easily download, build, etc. Python packages
+stevedore         # manage dynamic plugins for Python applications
+six               # Python 2 & 3 compatibility util
+virtualenv        # virtual Python Environment builder
+virtualenv-clone  # script to clone virtualenvs
+virtualenvwrapper # enhancements to virtualenv
+
+### testing ###
+coverage          # code coverage measurement
+nose              # extends unittest to make testing easier
+unittest2         # unit testing
+pytest            # simple testing framework
+pytest-cov        # coverage extension to pytest
+pytest-flask      # pytest Flask integration
+
+### plotting ###
+bokeh             # statistical interactive HTML plots for Python
+seaborn           # statistical data visualization
+
+### web development ###
+django            # web development framework
+Flask             # web development microframework
+webassets         # media asset and compression management
+werkzeug          # web development swiss army knife
+zope.interface    # interfaces for Python
+
+### database ###
+alembic           # database migration tool for SQLAlchemy
+boto              # AWS SDK
+gunicorn          # WSGI HTTP server for UNIX
+mysql-python      # interface for MySQL
+# psycopg2        # PostgreSQL database adapter ERROR
+PyMySQL           # MySQL driver
+sqlalchemy        # database abstraction
+waitress          # waitress WSGI server
+
+### scraping & gathering ###
+beautifulsoup4    # screen-scraping library
+feedfinder2       # finds feed URLs for webpage
+feedparser        # universal feed parser
+jellyfish         # approximate and phonetic string matching
+jieba             # Chinese word segmentation util
+newspaper         # article discovery & extraction
+nltk              # natural language toolkit
+Pillow            # Python imaging
+pytesseract       # Tesseract (OCR)
+
+### spatial ###
+fiona             # read & write spatial data files
+geograpy          # extract countries, cities, etc from a URL/text
+geojson           # geoJSON bindings & utils
+geopy             # geocoding library for Python
+overpass          # wrapper for OpenStreetMap Overpass API
+Shapely           # geometric objects, predicates, and operations
+pycountry         # ISO country, language, etc. script definitions
+pyshp             # read/write ESRI .shp
+python-dateutil   # date-time extension util
+pytz              # timezone definitions
+
+### data formatting ###
+pyasn1            # ASN.1 util
+cssselect         # translates CSS selectors to XPATH
+docutils          # plaintext documentation to useful formats
+jmespath          # JSON matching expressions
+lxml              # XML: combine libxml2/libxslt w/ ElementTree API
+python-magic      # file type identification using libmagic
+PyYAML            # YAML (human friendly data serialization)
+simplejson        # JSON de/encoder
+
+### networking ###
+certifi           # root certificates validating SSL trustworthiness
+requests          # HTTP for humans
+selenium          # automating web browsers
+tldextract        # separate TDL from registered subdomain of URL
+tornado           # asynchronous networking
+twisted           # asynchronous networking framework
+
+###misc###
+avro              # Apache's DDL serialization and RPC framework
+celery            # async task queues
+cookiecutter      # command tool to create projects from templates
+faker             # generate fake data
+future            # single-source Python 2 & 3 compatibility
+itsdangerous      # helpers to pass data to untrusted environment
+raven             # Sentry software (error logging) support
+redis             # Redis key-value store (in memory data structure store)
+sphinx            # documentation generator
+
+
+###Flask###
+flask-admin       # administrative portal
+flask-assets      # asset and compression management
+flask-bcrypt      # password hashing
+flask-login       # user session management
+flask-mail        # email client
+flask-migrate     # SQLAlchemy db migration using Alembic
+flask-script      # support for writing external scripts
+flask-sqlalchemy  # SQLAlchemy support
+flask-wtf         # forms
+jinja2            # templating
+WTForms           # forms
+
+
+###APIs###
+twitter           # twitter API wrapper
+twython           # twitter API wrapper
+github-flask      # flask Github API wrapper & authentication
+facebook          # facebook API wrapper
