@@ -1,11 +1,12 @@
 ### COMMON ###
+ipython           # interactive python shell
+jupiter		  # interactive data science notebook
 matplotlib        # plotting package
 numpy             # data array processing
 pandas            # data structures
 scipy             # scientific library
 scikit-learn      # machine learning and data mining
 sympy             # computer algebra system (CAS)
-ipython           # interactive python shell
 
 ### package utils ###
 # distribute      # easily download, build, etc. Python packages ERROR
@@ -99,6 +100,8 @@ itsdangerous      # helpers to pass data to untrusted environment
 raven             # Sentry software (error logging) support
 redis             # Redis key-value store (in memory data structure store)
 sphinx            # documentation generator
+tensorflow	  # Google machine intelligence
+tensorflow-gpu	  # Google machine intelligence 
 
 
 ###Flask###
@@ -120,3 +123,8 @@ twitter           # twitter API wrapper
 twython           # twitter API wrapper
 github-flask      # flask Github API wrapper & authentication
 facebook          # facebook API wrapper
+
+
+###data structures & models###
+prov		  # W3C Provenance data model
+

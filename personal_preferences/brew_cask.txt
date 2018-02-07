@@ -7,7 +7,9 @@ java # language
 xquartz # Apple's X server
 
 ### Development tool casks
+anaconda # Python distribution for large-scale data processing 
 atom # hackable code text editor
+cake brew # GUI for home-brew
 dash # api documentation
 docker # software containerization
 github-desktop # code repository
@@ -16,14 +18,18 @@ macdown # mac markup editor
 # mactex # mac TeX distribution
 mamp # Mac web server
 mongodb # NoSQL database
+reactotron # ReactJS and React-Native inspector
+robomongo # MongoDB manager
 mysqlworkbench # MySQL interface
 phantomjs # full stack (without browser)
 postgres # open source database
 processing # visual coding sandbox
 pycharm # Python IDE
+react-native-debugger # Debugger for React-Native
 rstudio # R IDE
 sourcetree # code repository
 sublime-text # code text editor
+tex studio # LaTeX IDE
 textwrangler # basic text editor
 vagrant # virtual environments
 vagrant-manager

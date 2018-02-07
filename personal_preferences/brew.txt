@@ -59,9 +59,12 @@ speedtest_cli # test bandwidth / speed
 ssh-copy-id # remote SSH
 tree # directory listing
 webkit2png # webpage screenshot
+yarn # javascript dependency manager
 zopfli # zlib compression
 pkg-config libffi # compression
 jena # Apache Jena (SW & LD)
+fuseki # Apache Jena server
+tomcat # Apache Java Servlet & Java Pages
 pandoc # Universal document converter
 brew tap homebrew/science
 gcc
@@ -95,9 +98,11 @@ fontconfig # customizing font access
 freetype # render fonts
 freexl # extract data from Excel
 gdal # GDAL spatial software
+graphviz # python chart visualization (used with prov)
 matplotlib # core plot utility
 mongodb # NoSQL database
 mysql # popular SQL
+neo4j # graph database
 node # nodeJS
 numpy # core utility for python
 postgresql # NoSQL database
