@@ -46,7 +46,7 @@ function runDots() {
             echo "------------------------------"
             echo "******** SELECTED BREW *******"
             echo "Installing Homebrew along with some common formulae and apps."
-            echo "This might awhile to complete, as some formulae need to be installed from source."
+            echo "This might take a while to complete, as some formulae need to be installed from source."
             echo "------------------------------"
             echo ""
             ./brewCheck.sh
@@ -94,14 +94,23 @@ function runDots() {
             ./datastores.sh
             ./brewCleanup.sh
         fi
+<<<<<<< HEAD
         if [ $ARG == "roots" ] || [ $ARG == "all" ]; then
             # Run the roots.sh Script
+=======
+        if [ $ARG == "web" ] || [ $ARG == "all" ]; then
+            # Run the web.sh Script
+>>>>>>> upstream/master
             echo "------------------------------"
             echo "******** SELECTED ROOTS ********"
             echo "Setting up roots.io web environment."
             echo "------------------------------"
             echo ""
+<<<<<<< HEAD
             ./roots.sh
+=======
+            ./web.sh
+>>>>>>> upstream/master
         fi
         if [ $ARG == "android" ] || [ $ARG == "all" ]; then
             # Run the android.sh Script
